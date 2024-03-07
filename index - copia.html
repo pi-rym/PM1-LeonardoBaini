@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor-superior {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .contenedor-inferior {
+            padding: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .actividad-contenedor {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            color: white;
+            height: 5cm;
+            width: 5cm; /* Ajusta según tus necesidades */
+        }
+
+        /* Añadí este estilo para que las actividades se muestren una debajo del otro */
+        .actividad-contenedor p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-superior">
+        <h1>Contenedor Superior</h1>
+        <p>Aquí puedes agregar cualquier contenido que desees.</p>
+    </div>
+
+    <div class="contenedor-inferior">
+        <h2>Contenedor Inferior</h2>
+        <p>Otro contenido interesante puede ir aquí.</p>
+
+        <form action="#" method="post" id="actividadForm">
+            <label for="actividad1">Actividad 1:</label>
+            <input type="text" id="actividad1" name="actividad1" required>
+
+            <label for="actividad2">Actividad 2 (Textarea):</label>
+            <textarea id="actividad2" name="actividad2" rows="4" required></textarea>
+
+            <label for="actividad3">Actividad 3 (URL de la imagen de fondo):</label>
+            <input type="text" id="actividad3" name="actividad3" required>
+
+            <input type="button" value="Agregar Actividad" onclick="agregarActividad()">
+        </form>
+
+        <div id="contenedoresActividades">
+            <!-- Contenedores de actividades se agregarán aquí -->
+        </div>
+    </div>
+
+    <script>
+        function agregarActividad() {
+            // Obtener los valores de los input
+            const actividad1 = document.getElementById('actividad1').value;
+            const actividad2 = document.getElementById('actividad2').value;
+            const actividad3 = document.getElementById('actividad3').value;
+
+            // Crear un nuevo contenedor de actividad
+            const nuevoContenedor = document.createElement('div');
+            nuevoContenedor.classList.add('actividad-contenedor');
+
+            // Agregar el fondo con la URL de la imagen
+            nuevoContenedor.style.backgroundImage = `url(${actividad3})`;
+
+            // Agregar contenido al nuevo contenedor
+            nuevoContenedor.innerHTML = `
+                <p>${actividad1}</p>
+                <p>${actividad2}</p>
+            `;
+
+            // Agregar el nuevo contenedor a la sección de contenedores de actividades
+            document.getElementById('contenedoresActividades').appendChild(nuevoContenedor);
+
+            // Limpiar los campos de input y textarea
+            document.getElementById('actividad1').value = '';
+            document.getElementById('actividad2').value = '';
+            document.getElementById('actividad3').value = '';
+        }
+    </script>
+
+</body>
+</html>

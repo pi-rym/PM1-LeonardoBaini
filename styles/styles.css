@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-superior {
+    background-color: #286d13;
+    padding: 20px;
+}
+
+.contenedor-inferior {
+    background-color: #0930af;
+    padding: 20px;
+}
+
+.imagenes-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.imagenes-contenedor img {
+    max-width: 100px;
+    height: auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.actividad-contenedor {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #630f0f;
+}
+
+.actividad-contenedor p {
+    margin: 5px 0;
+}
