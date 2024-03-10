@@ -4,12 +4,12 @@ body {
 }
 
 .contenedor-superior {
-    background-color: #286d13;
+    background-color: #72a6cf;
     padding: 20px;
 }
 
 .contenedor-inferior {
-    background-color: #0930af;
+    background-color: #0996af;
     padding: 20px;
 }
 
@@ -29,11 +29,18 @@ form {
 }
 
 .actividad-contenedor {
-    margin-top: 10px;
+    /*margin-top: 10px;
     padding: 10px;
-    border: 1px solid #630f0f;
+    border: 1px solid #18d350;
+    display: flex;    
+    width: auto;
+    object-fit: fill;*/
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
 }
-
+/*
 .actividad-contenedor p {
     margin: 5px 0;
 }
+*/
