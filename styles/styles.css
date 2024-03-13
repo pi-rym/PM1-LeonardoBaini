@@ -9,3 +9,80 @@
 
 
 }
+
+.envuelveActividad{
+    height: 250px;
+    width: 250px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#miNombre{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(236, 220, 220);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+#quienSoy{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(228, 190, 190);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+#misTecnologiasFavoritas{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(172, 173, 177);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+
+}
+#imagenesTecnologiasFavoritas{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgTech{
+    height: 300px;
+    width: 300px;
+
+}
+#misActividadesFavoritas{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(145, 150, 177);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contenedorActividadesFavoritas{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(184, 187, 214);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+

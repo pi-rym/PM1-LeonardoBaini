@@ -46,12 +46,27 @@ const body = document.getElementsByTagName("body")[0];
 
 function agregarActividad(){
     const actividades = document.getElementById("contenedorActividadesFavoritas");
- //   actividades.innerHTML = "Hola!!!";
+    const nombreActividad = document.getElementById("nombreActividad").value;
+    const descripcionActividad = document.getElementById("descripcionActividad").value;
+    const urlImagen = document.getElementById("urlImagen").value;
+    const envuelveActividad = document.createElement("div");
     const actividad = document.createElement("div");
+    envuelveActividad.appendChild(
+        document.createTextNode(nombreActividad)
+    );
     actividad.classList.add("actividad");
-    actividad.style.backgroundImage = "url('https://img.freepik.com/fotos-premium/primer-plano-pies-hombre-que-corre-zapatillas-ia-generativa_74760-3621.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1710201600&semt=sph')";
-    console.log(actividades);
-    body.appendChild(actividad);
+    actividad.style.backgroundImage = `url(${urlImagen})`;
+    
+    envuelveActividad.appendChild(actividad);
+    envuelveActividad.appendChild(
+        document.createTextNode(descripcionActividad)
+    );
+   /* console.log(nombreActividad);
+    console.log(descripcionActividad);
+    console.log(urlImagen);
+    */
+    actividades.appendChild(envuelveActividad);
+    body.appendChild(actividades);
 }
 
 const botonAgregarActividad = document.getElementById("botonSubmit");
