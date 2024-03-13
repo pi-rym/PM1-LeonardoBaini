@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Página</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js"></script>
+   
     
 </head>
 <body>
 
-    <div class="contenedor-superior">
-        <h1>Leonardo Baini</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nisi consequuntur velit minus maiores reprehenderit esse laborum saepe, blanditiis, culpa error ea distinctio unde molestiae! Temporibus eligendi obcaecati sed voluptate!</p>
+   <div id = "miNombre">
+    <h1>leonardo Baini</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo, ad ipsam vel, soluta aliquid,
+      nihil magnam doloremque dolorem quam repudiandae eaque consequuntur ut totam delectus esse natus reiciendis
+      accusantium.
+      </p>
+   </div>
+   <div id = "quienSoy">
+    <h2>Quien soy?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit autem voluptate cupiditate nisi? 
+        Nihil officia non unde ab earum laborum, excepturi ea pariatur necessitatibus aut, 
+        nobis sint quas odio?
+        </p>
     </div>
-
-    <div class="contenedor-inferior">
-        <h2>Imágenes de tecnologías</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda porro esse veritatis, non rem odio at earum accusantium molestiae numquam perspiciatis reprehenderit animi nisi quidem magnam obcaecati tempora consequatur ad?</p>
-
-        <form action="#" method="post" id="actividadForm">
-            <label for="actividad1">Actividad 1:</label>
-            <input type="text" id="actividad1" name="actividad1" required>
-
-            <label for="actividad2">Actividad 2 (Textarea):</label>
-            <textarea id="actividad2" name="actividad2" rows="4" required></textarea>
-
-            <label for="actividad3">Actividad 3 (URL de la imagen de fondo):</label>
-            <input type="text" id="actividad3" name="actividad3" required>
-
-            <input type="button" value="Agregar Actividad" onclick="agregarActividad()">
-        </form>
-
-        <div id="contenedoresActividades">
-            <!-- Contenedores de actividades se agregarán aquí -->
-        </div>
+   <div id = "misTecnologiasFavoritas">
+    <H2>Mis tecnologías favoritas</H2>
+    <div id = "imagenesTecnologiasFavoritas">
+        <img src="./spec/imgs/html.png" alt="HTML">
+        <img src="./spec/imgs/css.png" alt="CSS">
+        <img src="./spec/imgs/js.png" alt="JAVASCRIPT">
     </div>
+   </div>
+   <div id = "misActividadesFavoritas ">
+    <input type="text">
+    <input type="text">
+    <input type="url">
+    <input type="submit" value="Agregar actividad" id = "botonSubmit">
+   </div>
+   <div id = "contenedorActividadesFavoritas">
 
+   </div>
   
 
 </body>
+<script src="scripts/index.js"></script>
 </html>
