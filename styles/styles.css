@@ -17,9 +17,10 @@
 h1{
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size: x-large;
 }
+
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -27,18 +28,18 @@ p{
 #miNombre{
     height: 60px;
     width: 100%;
-    background-color: rgb(236, 220, 220);
+    background-color: hwb(0 70% 29%);
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(235, 228, 228);
 }
 #quienSoy{
     height: 60px;
     width: 100%;
-    background-color: rgb(228, 190, 190);
+    background-color: rgb(201, 193, 193);
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(235, 228, 228);
 }
 #misTecnologiasFavoritas{
     height: 400px;
@@ -46,7 +47,7 @@ p{
     background-color: rgb(172, 173, 177);
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(235, 228, 228);
 
 }
 #imagenesTecnologiasFavoritas{
@@ -67,7 +68,7 @@ p{
     background-color: rgb(145, 150, 177);
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(235, 228, 228);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -78,10 +79,11 @@ p{
     background-color: rgb(184, 187, 214);
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(235, 228, 228);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow-x: scroll;
 }
 
 
