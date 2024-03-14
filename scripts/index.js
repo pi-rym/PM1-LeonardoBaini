@@ -140,7 +140,13 @@ const mapedActivities = activities.map(activityToHtml);
 mapedActivities.forEach(element => {
     contenedorActividadesFavoritas.appendChild(element);
 
-    //Extracredit
+       
+
+   /*
+   EXTRA CREDIT. Implementar la funcionalidad de eliminar tarjetas del contenedor al hacer click sobre ellas
+    o sobre algún nuevo botón que podamos agregar a las mismas. Eres libre de encarar esta funcionalidad de 
+    la manera que consideres adecuada.  Puedes apoyarte en la IA para ayudarte a realizar este punto. 
+   */ 
     element.addEventListener("click",()=>{
         repository.deleteActivity(element.id);// a cada elemento le asigno un eventlistener con su id
         convertInstancesFromActivityToHtml(repository);//una vez borrado hago recursion y que renderice
@@ -184,69 +190,6 @@ const eventHandler = () =>{
    }
 }
 
-
-   
-
-   const botonAgregarActividad = document.getElementById("botonSubmit");
+  const botonAgregarActividad = document.getElementById("botonSubmit");
      
    botonAgregarActividad.addEventListener("click",eventHandler);
-
-   /*const imagenesTecnologiasFavoritas=document.getElementById("imagenesTecnologiasFavoritas");
-   imagenesTecnologiasFavoritas.addEventListener("click",function(){
-    alert("hola!!!");
-   });*/
-   
-   //mapedActivities.forEach(element =>{
-   // element.addEventListener("click",alert("AAAAAhhhhhh!!!"));
-
-   
-
-   /*
-   EXTRA CREDIT. Implementar la funcionalidad de eliminar tarjetas del contenedor al hacer click sobre ellas
-    o sobre algún nuevo botón que podamos agregar a las mismas. Eres libre de encarar esta funcionalidad de 
-    la manera que consideres adecuada.  Puedes apoyarte en la IA para ayudarte a realizar este punto. 
-   */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-//let activity = new Activity(1,"Correr","Trotar por el parque","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fes%2Fsearch%2Fcorrer&psig=AOvVaw3lKXXpPcybfqXvtAUPWi_h&ust=1710193440755000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDBspbV6oQDFQAAAAAdAAAAABAE");
-//console.log(activity);
-
-let repository = new Repository([]);
-repository.createActivity("Correr","Trotar por el parque","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fes%2Fsearch%2Fcorrer&psig=AOvVaw3lKXXpPcybfqXvtAUPWi_h&ust=1710193440755000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDBspbV6oQDFQAAAAAdAAAAABAE");
-repository.createActivity("Jugar Tennis","Es divertido para pasar tiempo con amigos","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.asics.com%2Fes%2Fes-es%2Ftennis-advice%2Fwhat-to-wear-to-play-tennis%2F&psig=AOvVaw2FuvarrY3OzfArQTAfVyDs&ust=1710193763599000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjLibDW6oQDFQAAAAAdAAAAABAE");
-repository.createActivity("Bicicleta","Haces ejercicio mientras te diviertes","https://okdiario.com/img/2019/01/21/como-organizar-un-paseo-en-bicicleta-655x368.jpg");
-
-
-repository.deleteActivity(2);
-repository.deleteActivity(1);
-//repository.deleteActivity(3);
-
-
-console.log(repository.getAllActivities());
-*/
