@@ -207,6 +207,8 @@ const eventHandler = () =>{
   const botonAgregarActividad = document.getElementById("botonSubmit");     
   botonAgregarActividad.addEventListener("click",eventHandler);
 */
+//module.exports = {Repository,Activity};
+const botonAgregarActividad = document.getElementById("botonSubmit");     
+  botonAgregarActividad.addEventListener("click",eventHandler);
 
 
-   module.exports = {Repository,Activity}

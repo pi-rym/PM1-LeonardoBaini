@@ -87,7 +87,7 @@ p{
     align-items: center;
     justify-content: space-evenly;
 }
-#contenedorAcptividadesFavoritas{
+#contenedorActividadesFavoritas{
     height: 300px;
     width: 100%;
     background-color: rgb(184, 187, 214);
@@ -99,6 +99,8 @@ p{
     justify-content: space-evenly;
     overflow-x: scroll;
 }
+
+
 
 
 
