@@ -20,8 +20,14 @@ h1{
     font-family: monospace;
     font-size: x-large;
 }
+h3{
+    display: flex;
+    justify-content: center;
+}
 
 p{
+    display: flex;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -55,13 +61,21 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    padding: 50px;
 }
 
 .imgTech{
-    height: 300px;
-    width: 300px;
-
+    height : 100px;
+    width : 100px;
+    padding :  50px;
 }
+.img{
+   /* padding:auto;*/
+    border:4px;
+    border-style:solid;
+    border-color:black;
+}
+
 #misActividadesFavoritas{
     height: 70px;
     width: 100%;
@@ -73,7 +87,7 @@ p{
     align-items: center;
     justify-content: space-evenly;
 }
-#contenedorActividadesFavoritas{
+#contenedorAcptividadesFavoritas{
     height: 300px;
     width: 100%;
     background-color: rgb(184, 187, 214);

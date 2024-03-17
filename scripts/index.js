@@ -88,8 +88,8 @@ const activityToHtml = (activity) =>{
   “Appendear” al nuevo <div> los elementos creados anteriormente .
   */
   tarjeta.appendChild(h3);
-  tarjeta.appendChild(p);
   tarjeta.appendChild(img);
+  tarjeta.appendChild(p);
 
   /*
   Asignar al <div> la clase CSS que tengas implementada para darle estilos.
@@ -190,6 +190,23 @@ const eventHandler = () =>{
    }
 }
 
-  const botonAgregarActividad = document.getElementById("botonSubmit");
-     
-   botonAgregarActividad.addEventListener("click",eventHandler);
+/*
+ Tuve que comentar el código que hace referencia a "document" porque npm test no encuentra referencias a document y genera error:
+ ReferenceError: document is not defined
+    at Object.<anonymous> (C:\Users\Outlet\Documents\HENRY\MODULO1\PM1-LeonardoBaini\scripts\index.js:193:33)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\Outlet\Documents\HENRY\MODULO1\PM1-LeonardoBaini\spec\prueba.spec.js:7:31)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+
+  const botonAgregarActividad = document.getElementById("botonSubmit");     
+  botonAgregarActividad.addEventListener("click",eventHandler);
+*/
+
+
+   module.exports = {Repository,Activity}
