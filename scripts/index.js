@@ -207,7 +207,16 @@ const eventHandler = () =>{
   const botonAgregarActividad = document.getElementById("botonSubmit");     
   botonAgregarActividad.addEventListener("click",eventHandler);
 */
-//module.exports = {Repository,Activity};
+module.exports = {Repository,Activity};
+
+/*
+Observación enccontrada, si se deja el module.exports, entonces el navegador dá error
+index.js:210 Uncaught ReferenceError: module is not defined
+    at index.js:210:1
+si de deja const botonAgregarActividad = document.getElementById("botonSubmit");     
+  botonAgregarActividad.addEventListener("click",eventHandler);
+  en el momento del npm test, entonces dá error de referencia al objeto Document. 
+*/
 const botonAgregarActividad = document.getElementById("botonSubmit");     
   botonAgregarActividad.addEventListener("click",eventHandler);
 
