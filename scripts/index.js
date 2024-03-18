@@ -218,7 +218,7 @@ const eventHandler = () =>{
 const ocultarSiVacio = () =>{
     
     let div = document.getElementById('contenedorActividadesFavoritas');
-    console.log(div.innerHTML.trim().length);
+   // console.log(div.innerHTML.trim().length);
     if (div.innerHTML.trim().length === 0) {
     // Oculta el div si está vacío
     div.style.display = 'none';
@@ -230,7 +230,29 @@ const ocultarSiVacio = () =>{
     }
     
 }
-//module.exports = {Repository,Activity};
+
+/*
+Para manejar esta situación y permitir que el código se ejecute tanto en un entorno de navegador como en Node.js, puedes hacer lo siguiente:
+
+Separar el código específico del navegador y del servidor: Puedes tener un archivo principal que se ejecute en el navegador y otro archivo que se utilice para las pruebas en Node.js.
+
+Utilizar una herramienta de construcción como Webpack o Browserify: Estas herramientas te permiten empaquetar tu código para su uso en el navegador y también pueden manejar la importación y exportación de módulos de Node.js.
+
+Condicionar la exportación basada en el entorno: Puedes verificar si module.exports está definido antes de utilizarlo. Por ejemplo:
+
+javascript
+Copy code
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { Repository, Activity };
+}
+De esta manera, module.exports solo se utilizará en entornos de Node.js, mientras que en un navegador simplemente se ignorará.
+
+El enfoque que elijas dependerá de tus necesidades específicas y de la complejidad de tu proyecto.
+*/ 
+
+if (typeof module !== 'undefined' && module.exports) {
+module.exports = {Repository,Activity};
+}
 
 /*
 Observación enccontrada, si se deja el module.exports, entonces el navegador dá error

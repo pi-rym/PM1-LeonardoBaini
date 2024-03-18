@@ -1,62 +1,67 @@
-.actividad{
+.actividad {
     height: 200px;
     width: 200px;
-    border-color: black;
-    border: 200px ;
+    border: 2px solid black; /* Ajustado el grosor y el estilo del borde */
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
-
-
+    /* Añadido un fondo degradado como ejemplo */
+   /* background: linear-gradient(to right, #ffafbd, #ffc3a0);*/
+    background: linear-gradient(to right, #ffd700, #ffa500);
 }
 
-.envuelveActividad{
+.envuelveActividad {
     height: 250px;
     width: 250px;
+    /* Añadido un margen para separar del contenido circundante */
+    margin: 10px;
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
     font-family: monospace;
     font-size: x-large;
 }
-h3{
+
+h3 {
     display: flex;
     justify-content: center;
 }
 
-p{
+p {
     display: flex;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#miNombre .backComun{
+#miNombre .backComun,
+#quienSoy,
+#misTecnologiasFavoritas,
+#misActividadesFavoritas,
+#contenedorActividadesFavoritas {
     height: 60px;
     width: 100%;
-    background-color: hwb(0 70% 29%);
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(235, 228, 228);
+    border: 1px solid rgb(235, 228, 228); /* Ajustado el grosor y el estilo del borde */
 }
-#quienSoy{
-    height: 60px;
-    width: 100%;
-    background-color: rgb(201, 193, 193);
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(235, 228, 228);
-}
-#misTecnologiasFavoritas{
-    height: 400px;
-    width: 100%;
-    background-color: rgb(172, 173, 177);
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(235, 228, 228);
 
+#miNombre .backComun {
+    background-color: hwb(0 70% 29%);
 }
-#imagenesTecnologiasFavoritas{
+
+#quienSoy {
+    background-color: rgb(201, 193, 193);
+}
+
+#misTecnologiasFavoritas {
+   /* background-color: rgb(172, 173, 177);*/
+    background-color: #6eb16e; /* Verde lima */
+    height: 400px;
+    /* Ajustado el color y el grosor del borde */
+    border: 2px solid rgb(235, 228, 228);
+}
+
+#imagenesTecnologiasFavoritas {
     height: 100%;
     width: 100%;
     display: flex;
@@ -64,47 +69,37 @@ p{
     padding: 50px;
 }
 
-.imgTech{
-    height : 100px;
-    width : 100px;
-    padding :  50px;
+.imgTech {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
 }
-.img{
-   /* padding:auto;*/
-    border:4px;
-    border-style:solid;
-    border-color:black;
+
+.img {
+    border: 4px solid black; /* Ajustado el grosor y el estilo del borde */
 }
-.backComun{
-    background-color: rgb(84, 106, 233);
+
+.backComun {
+    background-color: #6eb16e; /* Verde lima */
 }
-#misActividadesFavoritas{
+
+#misActividadesFavoritas {
     height: 70px;
     width: 100%;
-    /*background-color: rgb(115, 130, 212);*/
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(235, 228, 228);
+    border: 1px solid rgb(235, 228, 228); /* Ajustado el grosor y el estilo del borde */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-#contenedorActividadesFavoritas{
+
+#contenedorActividadesFavoritas {
     height: 300px;
     width: 100%;
     background-color: rgb(184, 187, 214);
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(235, 228, 228);
+    /* Ajustado el color y el grosor del borde */
+    border: 2px solid rgb(235, 228, 228);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     overflow-x: scroll;
-   
-    
 }
-
-
-
-
-
