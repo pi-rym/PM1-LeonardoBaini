@@ -150,11 +150,18 @@ mapedActivities.forEach(element => {
     element.addEventListener("click",()=>{
         repository.deleteActivity(element.id);// a cada elemento le asigno un eventlistener con su id
         convertInstancesFromActivityToHtml(repository);//una vez borrado hago recursion y que renderice
+        ocultarSiVacio();
+     
         
     });
 
 
+
 });
+
+
+//ocultarSiVacio();
+
 }
 
 
@@ -186,6 +193,7 @@ const eventHandler = () =>{
     */
     convertInstancesFromActivityToHtml(repository);
 
+    ocultarSiVacio();
    
    }
 }
@@ -207,7 +215,22 @@ const eventHandler = () =>{
   const botonAgregarActividad = document.getElementById("botonSubmit");     
   botonAgregarActividad.addEventListener("click",eventHandler);
 */
-module.exports = {Repository,Activity};
+const ocultarSiVacio = () =>{
+    
+    let div = document.getElementById('contenedorActividadesFavoritas');
+    console.log(div.innerHTML.trim().length);
+    if (div.innerHTML.trim().length === 0) {
+    // Oculta el div si está vacío
+    div.style.display = 'none';
+    }
+
+    else {
+        // Muestra el div si no está vacío
+        div.style.display = '';
+    }
+    
+}
+//module.exports = {Repository,Activity};
 
 /*
 Observación enccontrada, si se deja el module.exports, entonces el navegador dá error

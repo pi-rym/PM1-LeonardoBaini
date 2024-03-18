@@ -12,14 +12,13 @@
 </head>
 <body>
 
-   <div id = "miNombre">
+   <div id = "miNombre" class="backComun">
     <h1>Leonardo Baini</h1>
-      <p>Aficionado a las nuevas tecnologías</p>
+      <p>Aficionado a la tecnología</p>
    </div>
    <div id = "quienSoy">
     <h1>Quien soy?</h1>
-        <p>Técnico Superior en Informática, egresado de la Universidad General Sarmiento, en busca de la libertad financiera. 
-        </p>
+        <p>Estudiante de desarrollo WEB Full Stack</p>
     </div>
    <div id = "misTecnologiasFavoritas">
     <H1>Mis tecnologías favoritas</H1>
@@ -29,7 +28,7 @@
         <img src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" alt="JAVASCRIPT" class="imgTech">
     </div>
    </div>
-   <div id = "misActividadesFavoritas">
+   <div id = "misActividadesFavoritas" class="backComun">
     <input type="text" name = "nombreActividad" id = "nombreActividad" placeholder="nombreActividad">
     <input type="text" name = "descripcionActividad" id = "descripcionActividad" placeholder="descripcionActividad">
     <input type="url"  name = "urlImagen" id = "urlImagen" placeholder="urlImagen">
@@ -44,6 +43,10 @@
 
     const botonAgregarActividad = document.getElementById("botonSubmit");     
     botonAgregarActividad.addEventListener("click",eventHandler);
+    
+    ocultarSiVacio();
+   
+
 
    </script>
  

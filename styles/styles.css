@@ -31,7 +31,7 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#miNombre{
+#miNombre .backComun{
     height: 60px;
     width: 100%;
     background-color: hwb(0 70% 29%);
@@ -75,11 +75,13 @@ p{
     border-style:solid;
     border-color:black;
 }
-
+.backComun{
+    background-color: rgb(84, 106, 233);
+}
 #misActividadesFavoritas{
     height: 70px;
     width: 100%;
-    background-color: rgb(145, 150, 177);
+    /*background-color: rgb(115, 130, 212);*/
     border: 1px;
     border-style: solid;
     border-color: rgb(235, 228, 228);
@@ -98,6 +100,8 @@ p{
     align-items: center;
     justify-content: space-evenly;
     overflow-x: scroll;
+   
+    
 }
 
 
