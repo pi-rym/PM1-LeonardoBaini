@@ -217,7 +217,5 @@ si de deja const botonAgregarActividad = document.getElementById("botonSubmit");
   botonAgregarActividad.addEventListener("click",eventHandler);
   en el momento del npm test, entonces dá error de referencia al objeto Document. 
 */
-const botonAgregarActividad = document.getElementById("botonSubmit");     
-  botonAgregarActividad.addEventListener("click",eventHandler);
 
 
